@@ -14,15 +14,8 @@ for race in data:
     d += str(race["d"])
 ways = 0
 t, d = int(t), int(d)
-for i in range(1, t // 2 + 1):
-    if i * (t - i) > d:
-        ways += 1
-ways *= 2
-if t % 2 == 0:
-    if (t // 2) ** 2 > d:
-        ways -= 1
-# print("result of: ", t, d)
-# print(ways)
-ans *= ways
-# break
+l = 1
+while l * (t - l) <= d:
+    l += 1
+ans = t - 2 * l + 1
 print(ans)
