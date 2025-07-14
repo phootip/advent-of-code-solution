@@ -51,15 +51,15 @@ while idx > 0:
         elif id2 == id:
             break
     cur_id -= 1
-#     print(mem)
-#     print(cur_id)
+    #     print(mem)
+    print(idx)
 # print(mem)
 
 mem2 = []
 for val, size in mem:
     mem2 += [val] * size
 mem = mem2
-print(mem)
+# print(mem)
 
 
 # print(mem)
